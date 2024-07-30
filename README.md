@@ -1,1 +1,1 @@
-# seyxycoin
+# Sexydog app
