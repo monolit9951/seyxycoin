@@ -1,0 +1,26 @@
+@import 'root.scss';
+
+.app {
+  height: 100%;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 900;
+  font-style: normal;
+
+  color: var(--white);
+  background-color: var(--blue);
+
+  .wrapper {
+    padding: 20px;
+  }
+
+  a {
+    color: unset;
+
+    &:visited {
+      color: unset;
+    }
+  }
+}

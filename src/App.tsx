@@ -5,12 +5,14 @@ import Hero from 'components/hero'
 import Roadmap from 'components/roadmap'
 import Tokenomics from 'components/tokenomics'
 
+import 'styles/index.scss'
+
 const App = () => {
   return (
-    <div className='layout layout__wrapper'>
+    <div className='app'>
       <Header />
 
-      <main className='layout__content'>
+      <main className='wrapper'>
         <Hero />
         <Tokenomics />
         <Comics />
