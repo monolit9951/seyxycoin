@@ -68,10 +68,14 @@
 @media only screen and (min-width: 1024px) {
   .header {
     height: 445px;
+    place-content: flex-end;
 
     &__navigation {
+      position: fixed;
+      z-index: 50;
+      top: 20px;
       width: 100%;
-      justify-content: space-between;
+      justify-content: space-around;
     }
   }
 }
