@@ -1,1 +1,90 @@
-    
+.comics {
+  position: relative;
+  z-index: 0;
+  height: 375px;
+  background-color: var(--light-blue);
+
+  &__content {
+    display: flex;
+    justify-content: center;
+
+    .comics__bg-image {
+      position: absolute;
+
+      &.ball-1 {
+        width: 32px;
+        top: 70px;
+        left: 8%;
+      }
+      &.ball-2 {
+        z-index: -1;
+        width: 113px;
+        bottom: 60px;
+        left: 50%;
+      }
+      &.ball-3 {
+        width: 108px;
+        bottom: -50px;
+        left: 5%;
+      }
+    }
+  }
+
+  &__slider {
+    width: 340px;
+    height: 165px;
+    margin-top: 70px;
+
+    .slick-list {
+      border-radius: 8px;
+    }
+  }
+
+  &__image {
+    z-index: 5;
+    width: 165px;
+    border-radius: 8px;
+  }
+
+  .slider-button {
+    position: absolute;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid var(--blue);
+    border-radius: 50%;
+    background-color: var(--white);
+    &:focus,
+    &:hover {
+      background-color: var(--white);
+    }
+
+    &.slick-disabled {
+      display: none;
+    }
+
+    &.slick-prev {
+      left: -10px;
+    }
+    &.slick-next {
+      right: -5px;
+    }
+    &.slick-prev,
+    &.slick-next {
+      top: 26%;
+    }
+
+    svg {
+      width: 15px;
+      height: 15px;
+    }
+
+    &::before {
+      content: '';
+    }
+  }
+}

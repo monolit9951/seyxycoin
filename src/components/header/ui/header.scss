@@ -1,0 +1,26 @@
+.header {
+  position: relative;
+  background-image: url('assets/images/hero@1x.jpg');
+  background-position-x: 20%;
+  background-size: cover;
+  height: 321px;
+
+  &__burger-btn {
+    position: absolute;
+    z-index: 60;
+    top: 20px;
+    right: 20px;
+
+    height: 32px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+}
+
+@media only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi) {
+  .header {
+    background-image: url('assets/images/hero@2x.jpg');
+  }
+}

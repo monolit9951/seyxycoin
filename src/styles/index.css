@@ -6,8 +6,6 @@ body {
 
   margin: 0;
   min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
 
   overflow-x: hidden;
 }
@@ -15,6 +13,8 @@ body {
 body,
 html,
 #root {
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
   height: 100%;
 }
 

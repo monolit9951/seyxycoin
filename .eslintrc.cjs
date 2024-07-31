@@ -107,6 +107,8 @@ module.exports = {
     {
       "files": ["*.js", "*.jsx", "*.ts", "*.tsx"],
       "rules": {
+        "react/jsx-props-no-spreading": "off",
+        "@typescript-eslint/prefer-nullish-coalescing": "off",
         "simple-import-sort/imports": [
           "error",
           {

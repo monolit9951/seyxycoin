@@ -1,7 +1,6 @@
 import Comics from 'components/comics'
 import Footer from 'components/footer'
 import Header from 'components/header'
-import Hero from 'components/hero'
 import Roadmap from 'components/roadmap'
 import Tokenomics from 'components/tokenomics'
 
@@ -13,7 +12,6 @@ const App = () => {
       <Header />
 
       <main className='wrapper'>
-        <Hero />
         <Tokenomics />
         <Comics />
         <Roadmap />

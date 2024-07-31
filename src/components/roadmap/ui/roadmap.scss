@@ -1,0 +1,84 @@
+.roadmap {
+  position: relative;
+  background-image: url('assets/images/bg@1x.webp');
+  background-size: cover;
+
+  &__list {
+    position: relative;
+    height: 590px;
+    margin-top: 40px;
+
+    li {
+      position: absolute;
+      z-index: 1;
+      max-width: 200px;
+      padding: 6px 12px;
+
+      border: 2px solid var(--medium-blue);
+      border-radius: 12px;
+
+      background-color: var(--light-blue);
+
+      &:nth-child(odd) {
+        left: 20px;
+      }
+      &:nth-child(even) {
+        right: 20px;
+      }
+
+      &:nth-child(2) {
+        top: 98px;
+      }
+
+      &:nth-child(3) {
+        top: 200px;
+      }
+
+      &:last-child {
+        bottom: 10px;
+      }
+
+      h3 {
+        font-size: 12px;
+        line-height: 1.33;
+        font-weight: 700;
+
+        color: var(--red);
+      }
+
+      p {
+        font-size: 12px;
+        line-height: 1.33;
+        font-weight: 500;
+
+        color: var(--black);
+      }
+    }
+  }
+
+  &__image {
+    position: absolute;
+    z-index: 0;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 335px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .roadmap {
+    &__image {
+      width: 487px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .roadmap {
+    &__image {
+      width: 597px;
+    }
+  }
+}

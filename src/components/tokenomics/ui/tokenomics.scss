@@ -1,0 +1,102 @@
+.tokenomics {
+  background-image: url('assets/images/bg@1x.webp');
+  background-size: cover;
+
+  &__content {
+    padding: 0 20px;
+  }
+
+  &__first-block {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: var(--white);
+
+    h3 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 11px 22px;
+      border-bottom: 2px solid var(--blue);
+
+      font-size: 28px;
+      line-height: 32px;
+
+      color: var(--blue);
+
+      svg {
+        stroke: var(--blue);
+      }
+    }
+
+    .tokenomics__list {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      padding: 16px 19px;
+
+      &-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        height: 65px;
+        padding: 5px 10px;
+
+        border: 2px solid var(--blue);
+        border-radius: 8px;
+
+        div {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          p {
+            font-size: 16px;
+            line-height: 22px;
+            color: var(--red);
+          }
+
+          img {
+            width: 50px;
+            height: 45px;
+          }
+        }
+      }
+    }
+  }
+
+  &__second-block {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 40px;
+  }
+
+  &__liquidity {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 110px;
+    padding: 6px 13px;
+    border: 2px solid var(--white);
+    border-radius: 8px;
+
+    p {
+      font-size: 16px;
+      line-height: 28px;
+      color: var(--black);
+
+      span {
+        font-size: 28px;
+        color: var(--white);
+      }
+    }
+
+    &__image {
+      width: 259px;
+    }
+  }
+}
