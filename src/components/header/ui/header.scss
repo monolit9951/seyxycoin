@@ -1,9 +1,32 @@
 .header {
   position: relative;
+  height: 321px;
+
   background-image: url('assets/images/hero@1x.jpg');
   background-position-x: 20%;
   background-size: cover;
-  height: 321px;
+
+  &__navigation {
+    display: flex;
+    gap: 44px;
+
+    > ul {
+      display: flex;
+      gap: 15px;
+
+      width: fit-content;
+      padding: 10px 30px;
+
+      border: 4px solid var(--white);
+      border-radius: 20px;
+      background-color: var(--blue);
+
+      > li {
+        font-size: 24px;
+        line-height: 1.33;
+      }
+    }
+  }
 
   &__burger-btn {
     position: absolute;
@@ -16,11 +39,45 @@
     border: none;
     background-color: transparent;
   }
+
+  .copy-text {
+    width: fit-content;
+  }
 }
 
 @media only screen and (min-device-pixel-ratio: 2),
   only screen and (min-resolution: 192dpi) {
   .header {
     background-image: url('assets/images/hero@2x.jpg');
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 375px;
+    padding: 20px 80px 50px;
+
+    background-position-x: 40%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .header {
+    height: 445px;
+
+    &__navigation {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .header {
+    height: 545px;
   }
 }

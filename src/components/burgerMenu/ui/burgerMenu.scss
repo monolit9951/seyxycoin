@@ -1,5 +1,5 @@
 .burger-menu {
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease;
   &__content {
     display: flex;
     flex-direction: column;
@@ -13,7 +13,7 @@
     top: -100%;
     left: 0;
     color: white;
-    transition: top 0.5s ease-in-out;
+    transition: top 0.5s ease;
     z-index: 50;
 
     &.open {
@@ -38,17 +38,8 @@
       }
     }
 
-    .burger-text {
-      background-color: var(--dark-blue);
-      padding: 12px 20px;
-      border: 4px solid var(--white);
-      border-radius: 20px;
-
-      p {
-        font-size: 16px;
-        font-weight: 800;
-        word-wrap: break-word;
-      }
+    button.copy-text {
+      width: 100%;
     }
   }
 }

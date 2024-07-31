@@ -1,5 +1,6 @@
 import { FC, RefObject, useEffect, useRef } from 'react'
 
+import CopyButton from 'components/copyButton'
 import { SocialsList } from 'components/socialsList'
 
 import './burgerMenu.scss'
@@ -54,7 +55,7 @@ const BurgerMenu: FC<Props> = (props) => {
           <ul>
             <li>
               <a href='#comics' onClick={onLinkClick}>
-                Comics
+                Comix
               </a>
             </li>
             <li>
@@ -70,9 +71,7 @@ const BurgerMenu: FC<Props> = (props) => {
           </ul>
         </nav>
 
-        <div className='burger-text'>
-          <p>CA:Dc84SNsfCk7o1uRy6UcUrVKM3dp21HcxbPy9CALNpump</p>
-        </div>
+        <CopyButton />
 
         <SocialsList />
       </div>
