@@ -49,7 +49,7 @@ const CopyButton = () => {
       <span ref={tooltipRef} className='tooltip'>
         Copy to clipboard
       </span>
-      <p>CA:Dc84SNsfCk7o1uRy6UcUrVKM3dp21HcxbPy9CALNpump</p>
+      <p>Dc84SNsfCk7o1uRy6UcUrVKM3dp21HcxbPy9CALNpump</p>
     </button>
   )
 }

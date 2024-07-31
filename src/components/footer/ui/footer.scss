@@ -62,3 +62,39 @@
     font-weight: 500;
   }
 }
+
+@media only screen and (min-width: 1024px) {
+  .footer {
+    background-color: var(--blue);
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .footer {
+    &__title {
+      height: 100%;
+      margin-bottom: 138px;
+      font-size: 180px;
+      letter-spacing: -0.03em;
+      -webkit-text-stroke: 4px var(--white);
+
+      &::after {
+        bottom: -78px;
+        width: 0;
+        height: 0;
+        border-left: 325px solid transparent;
+        border-right: 325px solid transparent;
+        border-top: 79px solid var(--medium-blue);
+      }
+    }
+
+    &__nav-list {
+      flex-direction: row;
+      font-size: 30px;
+    }
+
+    &__rights {
+      margin: 40px 0 50px;
+    }
+  }
+}

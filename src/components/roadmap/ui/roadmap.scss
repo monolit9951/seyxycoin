@@ -82,3 +82,56 @@
     }
   }
 }
+
+@media only screen and (min-width: 1440px) {
+  .roadmap {
+    &__list {
+      margin-top: 105px;
+
+      li {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        max-width: 500px;
+        padding: 10px 12px;
+
+        &:nth-child(odd) {
+          left: 4%;
+        }
+        &:nth-child(even) {
+          right: 4%;
+        }
+
+        &:nth-child(2) {
+          top: 7%;
+        }
+
+        &:nth-child(3) {
+          top: 61%;
+          z-index: 0;
+        }
+
+        &:last-child {
+          bottom: 20px;
+        }
+
+        h3 {
+          font-size: 30px;
+          line-height: 40px;
+          font-weight: 700;
+
+          color: var(--red);
+        }
+
+        p {
+          font-size: 20px;
+          line-height: 30px;
+          font-weight: 500;
+
+          color: var(--black);
+        }
+      }
+    }
+  }
+}

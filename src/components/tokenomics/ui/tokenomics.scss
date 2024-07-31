@@ -100,3 +100,91 @@
     }
   }
 }
+
+@media only screen and (min-width: 1440px) {
+  .tokenomics {
+    &__content {
+      display: flex;
+      justify-content: center;
+      gap: 70px;
+      margin-top: 154px;
+    }
+
+    &__first-block {
+      width: 473px;
+      height: fit-content;
+      margin: 0;
+      border-radius: 10px;
+      background-color: var(--white);
+
+      h3 {
+        padding: 20px 30px 20px 40px;
+        border-bottom-width: 4px;
+
+        font-size: 50px;
+        line-height: 60px;
+
+        svg {
+          width: 32px;
+          height: 32px;
+        }
+      }
+
+      .tokenomics__list {
+        gap: 10px;
+        padding: 30px 35px;
+
+        &-item {
+          gap: 10px;
+          height: 80px;
+          padding: 5px 10px;
+
+          border-width: 3px;
+
+          svg {
+            width: 24px;
+            height: 24px;
+          }
+
+          div {
+            p {
+              font-size: 30px;
+              line-height: 40px;
+            }
+
+            img {
+              width: 72px;
+              height: 60px;
+            }
+          }
+        }
+      }
+    }
+
+    &__second-block {
+      min-width: 719px;
+    }
+
+    &__liquidity {
+      width: 208px;
+      padding: 10px 22px;
+      border: 5px solid var(--white);
+      border-radius: 26px;
+
+      p {
+        font-size: 30px;
+        line-height: 40px;
+        color: var(--black);
+
+        span {
+          font-size: 52px;
+          line-height: 66px;
+          color: var(--white);
+        }
+      }
+      &__image {
+        width: 597px;
+      }
+    }
+  }
+}

@@ -62,6 +62,7 @@ const Comics = () => {
         <img src={ball} alt='ball' className='comics__bg-image ball-1' />
         <img src={ball} alt='ball' className='comics__bg-image ball-2' />
         <img src={ball} alt='ball' className='comics__bg-image ball-3' />
+        <img src={ball} alt='ball' className='comics__bg-image ball-4' />
       </div>
     </section>
   )
