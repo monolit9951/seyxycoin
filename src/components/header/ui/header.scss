@@ -1,5 +1,4 @@
 .header {
-  position: relative;
   height: 321px;
 
   background-image: url('assets/images/hero@1x.jpg');
@@ -29,7 +28,7 @@
   }
 
   &__burger-btn {
-    position: absolute;
+    position: fixed;
     z-index: 60;
     top: 20px;
     right: 20px;
@@ -62,6 +61,20 @@
     padding: 20px 80px 50px;
 
     background-position-x: 40%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    place-content: flex-end;
+
+    &__navigation {
+      position: fixed;
+      z-index: 50;
+      top: 20px;
+      width: 100%;
+      justify-content: space-around;
+    }
   }
 }
 
