@@ -20,7 +20,7 @@ const SocialsList = () => {
         </a>
       </li>
       <li>
-        <a href='https://t.me/+z69CeH3wb2I3NTQ6' aria-label='Telegram.me'>
+        <a href='https://t.me/+Olop6TDLkSgyZDY6' aria-label='Telegram.me'>
           <Telegram />
         </a>
       </li>
