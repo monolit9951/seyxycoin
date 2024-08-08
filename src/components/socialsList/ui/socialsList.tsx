@@ -15,7 +15,7 @@ const SocialsList = () => {
         </a>
       </li>
       <li>
-        <a href='https://x.com/Sexy_doge_meme' aria-label='X.com'>
+        <a href='https://x.com/sexy_doge_meme' aria-label='X.com'>
           <Twitter />
         </a>
       </li>
